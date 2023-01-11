@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Be Knitting</title>
+</head>
+<body>
+<header class="header">
+    <img src="images/logo.png" class="logo" alt="logo"/>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./ourPlans.html">Our Plans</a></li>
+            <li><a class="active" href="./register.html">Register</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="container">
+
+    <article class="content form-container">
+        <h2>Register</h2>
+        <form class="form" id="registration-form" method="GET">
+            <div class="labels">
+                <label id="name-label" for="name">* Full Name</label>
+            </div>
+            <div class="input-tab">
+                <input
+                        class="input-field"
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                        autofocus
+                />
+            </div>
+
+            <div class="labels">
+                <label id="email-label" for="email">* Email</label>
+            </div>
+            <div class="input-tab">
+                <input
+                        class="input-field"
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="email@email.com"
+                        required
+                />
+            </div>
+
+            <div class="labels">
+                <label id="address-label" for="address">* Address</label>
+            </div>
+            <div class="input-tab">
+                <input
+                        class="input-field"
+                        type="text"
+                        id="address"
+                        name="address"
+                        placeholder="Street, number"
+                        required
+                />
+            </div>
+
+            <div class="labels">
+                <label id="number-label" for="zip">* Zip</label>
+            </div>
+            <div class="input-tab">
+                <input class="input-field" id="zip" name="zip" type="text" pattern="[0-9]*"/>
+            </div>
+
+            <div class="labels">
+                <label for="dropdown">Choose your plan</label>
+            </div>
+            <div class="input-tab">
+                <select class="input-field select" id="dropdown" name="plan">
+                    <option disabled value selected>Select an option</option>
+                    <option value="first">Be Luxury</option>
+                    <option value="cozy">Be Deluxe</option>
+                    <option value="luxury">Be Premium</option>
+                </select>
+            </div>
+
+            <div class="labels">
+                <label>Which is your favorite yarn? </label>
+            </div>
+            <div class="input-tab group">
+                <input type="radio" name="radio-button" value="lace"/>Lace<br/>
+                <input type="radio" name="radio-button" value="4ply"/>4ply<br/>
+                <input type="radio" name="radio-button" value="Dk"/>Dk<br/>
+                <input type="radio" name="radio-button" value="Aran"/>Aran<br/>
+            </div>
+
+            <div class="labels">
+                <label>Desired project type<br/>(Check all that apply):</label>
+            </div>
+            <div class="input-tab group">
+                <input type="checkbox" name="clothing" value="clothing"/> Clothing <br/>
+                <input type="checkbox" name="baby" value="baby"/>Baby & Children<br/>
+                <input type="checkbox" name="home" value="fam"/>Home<br/>
+                <input type="checkbox" name="pets" value="fam"/>Pets<br/>
+            </div>
+
+            <div class="labels"></div>
+            <div class="input-tab group">
+                <input type="checkbox" name="termsAndConditions" value="accept" required/>
+                By checking this box I aggree to the therms and conditions as described in:
+                <a href="./termsAndConditions.html" target="_blank">Terms and Conditions</a>
+            </div>
+
+
+            <div class="submit-btn">
+                <button class="form-submit" id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </article>
+</main>
+<footer class="footer">
+    <p>© 2022 Be Knitting Club</p>
+</footer>
+</body>
+</html>

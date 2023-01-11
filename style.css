@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Shared */
+
+.container {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    height: 100%;
+    width: 100%;
+    background-color: #ffefd6;
+    background-position: center;
+    background-size: cover;
+    padding-right: 3%;
+    padding-left: 3%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    max-width: 960px;
+    width: 100%;
+}
+
+.content h2 {
+    color: #06f;
+    font-size: 32px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.content .left {
+    color: #06f;
+    font-size: 32px;
+    padding: 50px 0;
+    text-align: left;
+}
+
+/** header **/
+
+.header {
+    background-color: #fdf6ef;
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logo {
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 3%;
+}
+
+/*** Navigation ***/
+
+nav {
+    flex: 1;
+    padding-left: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff6633;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+nav ul li a.active{
+    color: #06f;
+}
+
+/*** Navigation end ***/
+/** Header end **/
+
+/** Footer **/
+
+.footer {
+    position: relative;
+    width: 100%;
+    background-color: #f24304;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/** Footer end **/
+
+/* Shared */
+
+
+/* Home Page */
+
+/** Content **/
+
+.home-content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-content .text {
+    position: relative;
+    max-width: 600px;
+}
+
+.home-content .text h1 {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 80px;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    font-size: 40px;
+    color: #06f;
+}
+
+.home-content .text h1 span {
+    font-size: 50px;
+}
+
+.home-content .text p {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    margin-top: 10px;
+    color: #06f;
+}
+
+/** Content **/
+
+/** CTA **/
+.btn1 {
+    display: block;
+    text-decoration: none;
+    background: #f24304;
+    margin-top: 60px;
+    margin-left: 0;
+    padding: 15px 30px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 25px;
+    transition: background 0.5s;
+    max-width: 118px;
+}
+
+.btn1:hover {
+    background-color: lightgrey;
+}
+
+/** CTA End**/
+
+/** Hero **/
+.lhama {
+    position: fixed;
+    width: 691px;
+    height: 987px;
+    top: -52px;
+    right: 0;
+    z-index: 1;
+}
+
+.lhama .hero {
+    width: 100%;
+}
+
+/** Hero End **/
+.text {
+    width: 100%;
+}
+
+/* home footer */
+.home-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+/* Home Page end */
+
+
+/* Price Table */
+
+/** pricing Cards **/
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.card {
+    background-color: #649cea;
+    border-radius: 6px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+
+.image-container {
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+img {
+    width: 100%;
+    display: block;
+
+}
+
+.details {
+    padding: 20px 10px;
+}
+
+.details > h3 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+
+.details > p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+/** pricing Cards end */
+
+.pricing {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+}
+
+.pricing-plan {
+    flex: 1;
+    background-color: #f24304;
+    margin: 15px 8px;
+    padding: 30px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.pricing-plan h3 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e30046;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+}
+
+.pricing-plan p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pricing-plan p span {
+    font-size: 33px;
+}
+
+.pricing-plan ul {
+    margin: 0 0 35px;
+    padding-left: 16px;
+    list-style: none;
+    line-height: 1.8;
+    color: #fff;
+}
+
+.pricing-plan ul li::before {
+    content: "•";
+    color: #fff;
+    display: inline-block;
+    width: 20px;
+    margin-left: -15px;
+    position: relative;
+    top: 4px;
+    font-size: 26px;
+    line-height: 0;
+}
+
+.pricing-plan a {
+    display: block;
+    text-decoration: none;
+    color: #f24304;
+    padding: 10px 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.pricing-plan a:hover {
+    background-color: lightgray;
+}
+
+/* Style the table */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+
+}
+
+table.comparison-table tr {
+    line-height: 1.5em;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Style table headers and table data */
+th {
+    width:50%;
+}
+
+th, td {
+    text-align: center;
+    padding: 16px;
+}
+
+th:first-child, td:first-child {
+    text-align: left;
+}
+
+/* Zebra-striped table rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+.fa-check {
+    color: green;
+}
+
+.fa-remove {
+    color: red;
+}
+
+/* Price Table end */
+
+/* Register */
+
+.form-container {
+    padding: 6px;
+    background-color: #fffbed;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.labels {
+    width: 45%;
+    text-align: right;
+    padding-right: 12px;
+}
+
+.input-tab {
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+}
+
+.input-tab.group {
+    margin: 10px 0;
+}
+
+.input-field {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #e67e22;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+::-webkit-input-placeholder {
+    font-style: italic;
+    font-weight: 300;
+}
+
+input {
+    margin: 7px;
+}
+
+.select {
+    border: 1px solid #e67e22;
+    border-radius: 3px;
+    font-size: 15px;
+    width: 102%;
+    margin: 7px;
+}
+
+.submit-btn {
+    width: 100%;
+    text-align: center;
+    margin: 100px 20px 20px 20px;
+}
+
+button.form-submit {
+    background-color: #f24304;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 1px solid;
+    width: 100%;
+    max-width: 164px;
+}
+
+button:hover {
+    background-color: #bf6516;
+}
+
+/* Register end */
+
+/* Contact */
+
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email {
+    height: auto;
+    padding: 20px 0;
+}
+
+.map {
+    max-width: 600px;
+    padding: 20px 40px 60px 40px;
+}
+
+/* Contact end */
+
+/* Terms and Conditions */
+
+h2.heading, .terms-and-conditions {
+    color: dimgray;
+}
+
+h2.heading {
+    text-align: left;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.terms-and-conditions h3.heading {
+    padding: 15px 0;
+
+}
+
+.terms-and-conditions ol, ul {
+    font-weight: bold;
+    padding: 15px;
+}
+
+.terms-and-conditions li {
+    margin-bottom: 16px;
+}
+
